@@ -1,0 +1,67 @@
+DOM Events Exercise...
+A. Inside the “DOM” folder create a Folder called “DOMEventsExercise”
+B. Inside the “DOMEventsExercise” folder create a index.html file
+C. Inside the “DOMEventsExercise” folder create a style.css file
+D. Inside the “DOMEventsExercise” folder create a app.js file
+E. Inside the index.html file create the HTML boilerplate and set the title of the page to “DOM Events Exercise”
+F. Link the style.css and app.js files to the index.html file
+G. Paste the following HTML into your index.html file after the opening body tag…
+  <h1>DOM Events</h1>
+  <p>DOM Events are a signal that something has occurred, or is occurring, and can be triggered by user interactions or by the browser.</p>
+  <button id="one">BUTTON ONE</button>
+  <h3>HOVER OVER THIS</h3>
+  <form>
+    <input type="text" name="entry" placeholder="Type Something Here">
+    <input type="submit">
+  </form>
+  <button id="dm">DARK MODE</button>
+  <button id="times">CAN ONLY CLICK A CERTAIN NUMBER OF TIMES</button>
+
+H. Paste the following CSS into your empty style.css file…
+.dark-mode {
+  background-color: #333;
+  color: #ccc;
+}
+I. Start your Live Server (NOTE: Must be in the index.html file do to this)
+
+J. Open your app.js file and complete the following...
+
+1a. Select the 1st button element and set it to a const variable called button1
+
+
+1b. Using the ONCLICK event property, have an alert that says "You clicked the first button! Congrats!" pop up when you click on the button
+
+
+
+2a. Select the h3 and set it to a const variable called h3
+
+
+2b. Using addEventListener, have an alert that says "You hovered over the h3 element! Congrats!" pop up when you hover over the h3
+
+
+
+3a. Select the form element/tag and set it to a const variable called form
+
+
+3b. Using addEventListener, display the value in the text input with an alert when the submit input in the form is clicked.
+
+
+
+BONUS
+
+B-4a. Select the Dark Mode button and set it to a const variable called darkMode
+
+
+B-4b. Using addEventListener, TOGGLE the "dark-mode" CSS class On/Off for EVERY element when the Dark Mode Button is clicked
+
+
+
+B-5a. Select the "CAN ONLY CLICK A CERTAIN NUMBER OF TIMES" button and set it to a const variable called times
+
+
+B-5b. Using addEventListener, have an alert that says "You clicked the last button! Congrats!" pop up when you click on the button. However, have this setup so that when the button is clicked a third time have the following alert display instead of the "You clicked the last button! Congrats!" alert. New alert "OH NO! This button is NOT going to work anymore". And finally, when the button is clicked a fourth, fifth, sixth, etc. time have it do nothing (AKA Disable the button).
+
+
+
+When finished, create a repository in the “DOMEventsExercise” Folder as well as on GitHub. Add and commit everything in the DOMEventsExercise folder and push it up to your GitHub repository. Then paste the link to your GitHub repository page in the form
+               https://forms.gle/gLF7yRE3PkdBCWUr6
