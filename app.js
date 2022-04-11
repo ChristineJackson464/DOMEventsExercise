@@ -27,7 +27,7 @@ const form = document.querySelector("form");
 // 3b. Using addEventListener, display the value in the text input with an alert when the submit input in the form is clicked.
 //! 
 form.addEventListener("submit", () => {
-    const value = form.elements.entry.value;
+    const entry = form.elements.entry.value;
     alert(`${entry}`);
 });
 
@@ -38,7 +38,7 @@ const darkMode = document.querySelector("#dm");
 
 
 // B-4b. Using addEventListener, TOGGLE the "dark-mode" CSS class On/Off for EVERY element when the Dark Mode Button is clicked
-//! COULD NOT FOR FUNCT PROPERLY, ASKED FOR ASSISTANCE
+//! COULD NOT GET THE  FUNCT PROPERLY, ASKED FOR ASSISTANCE
 let body = document.querySelector(`body`)
 darkMode.forEach(body => {
     body.addEventListener("click", toggle(`#dm`));
@@ -73,3 +73,44 @@ times.onclick = () =>{
     }
 };
 */
+
+let x = 0;
+times.addEventListener ('click', () => {
+    x++;
+    if (x>= 2) {
+        alert ("You clicked the last button! Congrats!")
+    } else if (x === 3) {
+        alert ("OH NO! This button is NOT going to work anymore!");
+    } else {
+        times.disabled = true;
+    }
+})
+
+/*
+OR
+let click = 0;
+times.onclick = () => {
+    click++;
+    if (click <= 2) {
+        alert ("You clicked the last button! Congrats!")
+    } else if (click === 3) {
+        alert ("OH NO! This button is NOT going to work anymore!");
+    } else {
+        times.disabled = true;
+    }
+}
+
+OR
+
+let num = 1;
+times.addEventListener ("click", () => {
+    if (num < 3){
+        alert ("You clicked the last button! Congrats!");
+        num++;
+    } else if (num === 3) {
+        alert ("OH NO! This button is NOT going to work anymore!")
+        num++;
+    } else {
+        times.disabled = true;
+    }
+}):
